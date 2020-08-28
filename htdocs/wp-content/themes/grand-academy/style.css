@@ -4,9 +4,9 @@ Theme URI: http://creativthemes.com/downloads/grand-academy/
 Author: Creativ Themes
 Author URI: http://creativthemes.com/
 Description: Grand Academy is a colorful, responsive & modern Multi-purpose Children WordPress Theme. It is great for childcare company, day care center, preschool agency, kindergarten. Also the template fits children art & craft school, nursery firm, education & training center, primary/elementary school, pre-school education bureau, pediatric department business organizations, etc. It is a perfect template for projects that strongly focus on handling children or related to kids and their growing activities.
-Version: 1.6
+Version: 1.7
 Requires PHP: 5.6
-Tested up to: 5.4.2
+Tested up to: 5.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: grand-academy
@@ -140,7 +140,6 @@ abbr[title] {
 b,
 strong {
     font-weight: bold;
-    color: #6c757d;
 }
 
 dfn {
@@ -2536,7 +2535,7 @@ ul.social-icons {
     background-color: #111;
 }
 #featured-slider .overlay {
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .featured-content-wrapper {
     position: absolute;

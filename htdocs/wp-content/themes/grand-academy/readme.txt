@@ -2,9 +2,9 @@
 
 Contributors: creativthemes
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, featured-images, footer-widgets, left-sidebar, editor-style, right-sidebar, full-width-template, two-columns, custom-colors, custom-header, custom-logo, blog, entertainment, portfolio
-Requires PHP: 5.6
 Requires at least: 4.7
-Tested up to: 5.4.2
+Requires PHP: 5.6
+Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,7 +44,7 @@ https://pxhere.com/en/photo/1325749
 
 License: CC0 1.0 Universal (CC0 1.0)
 Screenshot Image
-https://pxhere.com/en/photo/506689
+https://pxhere.com/en/photo/554308
 
 Unless otherwise specified, all the theme images are created by us and licensed under the same license as the theme is.
 
@@ -56,6 +56,10 @@ Unless otherwise specified, all the theme images are created by us and licensed 
 	Contact Form 7 is recommended to use for contact forms for contact page.
 
 == Changelog ==
+
+= 1.7 - August 27, 2020 =
+* Updated blocks design
+* Changed Screenshot
 
 = 1.6 - August 7, 2020 =
 * Updated social icons to open in a new window
