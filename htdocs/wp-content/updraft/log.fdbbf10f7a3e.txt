@@ -1,0 +1,77 @@
+0000.000 (0) Opened log file at time: Sat, 29 Aug 2020 06:45:51 +0000 on http://animal-wisdom.42web.io
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.26 WP: 5.5 PHP: 7.4.8 (apache2handler, Linux freeweb12-1.byetcluster.com 2.6.32-896.16.1.lve1.4.54.el6.x86_64 #1 SMP Wed May 2 07:43:19 EDT 2018 x86_64) MySQL: 5.6.48-88.0 WPLANG: en_AU Server: Apache safe_mode: 0 max_execution_time: 20 memory_limit: 158M (used: 49.4M | 16.5M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: Unknown
+0000.005 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.007 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.009 (0) Semaphore (fd, wpet_options) was stuck, set lock time to 2020-08-29 06:45:51
+0000.010 (0) Semaphore (fd, wpet_options) reset to 1
+0000.011 (0) Set semaphore last lock (fd) time to 2020-08-29 06:45:51
+0000.012 (0) Semaphore lock (fd) complete
+0000.015 (0) Backup run: resumption=0, nonce=fdbbf10f7a3e, file_nonce=fdbbf10f7a3e begun at=1598683551 (0s ago), job type=backup
+0000.016 (0) Scheduling a resumption (1) after 300 seconds (1598683851) in case this run gets aborted
+0000.033 (0) Checking if we have a zip executable available
+0000.035 (0) Creation of backups of directories: beginning
+0000.041 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.856 (0) Total entities for the zip file: 862 directories, 3705 files (0 skipped as non-modified), 360 MB
+0002.884 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0003.235 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 100 files added (on-disk size: 155.9 KB)
+0003.362 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 200 files added (on-disk size: 155.9 KB)
+0003.464 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 300 files added (on-disk size: 155.9 KB)
+0003.959 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 400 files added (on-disk size: 155.9 KB)
+0007.201 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (15.7 MB, 400 (401) files added so far); re-opening (prior size: 155.9 KB)
+0036.624 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 500 files added (on-disk size: 5218.8 KB)
+0036.790 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 600 files added (on-disk size: 5218.8 KB)
+0036.857 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 700 files added (on-disk size: 5218.8 KB)
+0036.917 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 800 files added (on-disk size: 5218.8 KB)
+0036.982 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 900 files added (on-disk size: 5218.8 KB)
+0036.986 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.8 MB, 3705 files batched, 501 (902) added so far); re-opening (prior size: 5218.8 KB)
+0062.927 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1000 files added (on-disk size: 9351.4 KB)
+0063.177 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1100 files added (on-disk size: 9351.4 KB)
+0063.847 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1200 files added (on-disk size: 9351.4 KB)
+0064.897 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1300 files added (on-disk size: 9351.4 KB)
+0064.970 (0) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1400 files added (on-disk size: 9351.4 KB)
+0064.972 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18.1 MB, 3705 files batched, 501 (1403) added so far); re-opening (prior size: 9351.4 KB)
+0344.617 (1) Opened log file at time: Sat, 29 Aug 2020 06:51:35 +0000 on http://animal-wisdom.42web.io
+0344.618 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.26 WP: 5.5 PHP: 7.4.8 (apache2handler, Linux freeweb12-1.byetcluster.com 2.6.32-896.16.1.lve1.4.54.el6.x86_64 #1 SMP Wed May 2 07:43:19 EDT 2018 x86_64) MySQL: 5.6.48-88.0 WPLANG: en_AU Server: Apache safe_mode: 0 max_execution_time: 20 memory_limit: 158M (used: 41.5M | 40.5M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG: C ZipArchive::addFile: Y
+0344.619 (1) Free space on disk containing Updraft's temporary directory: Unknown
+0344.621 (1) Backup run: resumption=1, nonce=fdbbf10f7a3e, file_nonce=fdbbf10f7a3e begun at=1598683551 (344s ago), job type=backup, previous check-in=62.9s
+0344.622 (1) Scheduling a resumption (2) after 300 seconds (1598684195) in case this run gets aborted
+0344.632 (1) Checking if we have a zip executable available
+0344.633 (1) Creation of backups of directories: had begun; will resume
+0344.635 (1) Beginning creation of dump of plugins (split every: 400 MB)
+0344.637 (1) File exists (/home/vol6_5/epizy.com/epiz_26547644/htdocs/wp-content/updraft/backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp), but was apparently not modified within the last 30 seconds, so we assume that any previous run has now terminated (time_mod=1598683616, time_now=1598683895, diff=279)
+0344.646 (1) backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: Zip file already exists, with 902 files
+0345.465 (1) Total entities for the zip file: 861 directories, 3701 files (0 skipped as non-modified), 74 MB
+0345.482 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 100 files added (on-disk size: 9351.4 KB)
+0345.489 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 200 files added (on-disk size: 9351.4 KB)
+0345.496 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 300 files added (on-disk size: 9351.4 KB)
+0345.503 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 400 files added (on-disk size: 9351.4 KB)
+0345.509 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 500 files added (on-disk size: 9351.4 KB)
+0345.515 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 600 files added (on-disk size: 9351.4 KB)
+0345.523 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 700 files added (on-disk size: 9351.4 KB)
+0345.529 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 800 files added (on-disk size: 9351.4 KB)
+0345.536 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 900 files added (on-disk size: 9351.4 KB)
+0345.559 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1000 files added (on-disk size: 9351.4 KB)
+0345.584 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1100 files added (on-disk size: 9351.4 KB)
+0345.616 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1200 files added (on-disk size: 9351.4 KB)
+0345.648 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1300 files added (on-disk size: 9351.4 KB)
+0345.680 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1400 files added (on-disk size: 9351.4 KB)
+0345.683 (1) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18.1 MB, 3701 files batched, 501 (501) added so far); re-opening (prior size: 9351.4 KB)
+0356.492 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1500 files added (on-disk size: 14621 KB)
+0356.856 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1600 files added (on-disk size: 14621 KB)
+0356.911 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1700 files added (on-disk size: 14621 KB)
+0356.966 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1800 files added (on-disk size: 14621 KB)
+0356.994 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 1900 files added (on-disk size: 14621 KB)
+0357.004 (1) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3 MB, 3701 files batched, 501 (1002) added so far); re-opening (prior size: 14621 KB)
+0380.188 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2000 files added (on-disk size: 15573.4 KB)
+0380.608 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2100 files added (on-disk size: 15573.4 KB)
+0380.629 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2200 files added (on-disk size: 15573.4 KB)
+0380.652 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2300 files added (on-disk size: 15573.4 KB)
+0380.674 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2400 files added (on-disk size: 15573.4 KB)
+0380.676 (1) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.4 MB, 3701 files batched, 501 (1503) added so far); re-opening (prior size: 15573.4 KB)
+0403.892 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2500 files added (on-disk size: 16372.3 KB)
+0404.307 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2600 files added (on-disk size: 16372.3 KB)
+0404.329 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2700 files added (on-disk size: 16372.3 KB)
+0404.351 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2800 files added (on-disk size: 16372.3 KB)
+0404.376 (1) Zip: backup_2020-08-29-0645_Blazing_Forest_fdbbf10f7a3e-plugins.zip.tmp: 2900 files added (on-disk size: 16372.3 KB)
+0404.378 (1) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (12.8 MB, 3701 files batched, 501 (2004) added so far); re-opening (prior size: 16372.3 KB)
