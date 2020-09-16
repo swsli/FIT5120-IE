@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: Sep 12, 2020 at 07:48 AM
+-- Generation Time: Sep 15, 2020 at 01:31 AM
 -- Server version: 8.0.21
 -- PHP Version: 7.4.9
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `endangered_animal`
+-- Database: `bitnami_wordpress`
 --
 
 -- --------------------------------------------------------
@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `content` (
-  `Class` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Class` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `Common_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Habitat` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Reason` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Action` text COLLATE utf8mb4_unicode_ci NOT NULL
+  `Description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Habitat` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Reason` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Action` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -62,7 +62,6 @@ INSERT INTO `content` (`Class`, `Common_name`, `Description`, `Habitat`, `Reason
 ('Insects', 'Australian fritillary butterfly', 'Australian fritillary butterfly is a 60 mm butterfly with pale orange-brown upperside and fore wing pinkish-orange underside.', 'Open swampy coastal', 'Farming, Urbanisation', 'Tracking population, Protect habitat'),
 ('Insects', 'Bulloak jewel butterfly', 'Bulloak jewel butterfly is a small butterfly with purple or blue wings.', 'Live with a specific tree -- bull oak', 'Road widening, Wood cutting', 'Protect habitat, Monitor population'),
 ('Mammals', 'Bridled nailtail wallaby', 'Bridled nailtail wallaby is a small wallaby from grey to light brown.', 'Open grass woodland', 'Hunting, Eaten by other animals(foxes and cats)', 'Prevent habitat, Control predator, Keep monitoring'),
-('Mammals', 'Northern bettong', 'Northern bettong is a rat-kangaroo with grey fur and cream-colored belly.', 'Upland grass woodland and open forest', 'Fire, Feral pigs, Grazing', 'Maintain habitat, Monitor population across species'),
 ('Mammals', 'Proserpine rock-wallaby', 'Proserpine rock-wallaby is a wallaby with long tail and dark grey fur.', 'Rocky outcrops and rock piles', 'Habitat damage, Disease', 'Control grazing, Install fences'),
 ('Mammals', 'Spotted-tailed quoll (northern subspecies)', 'Spotted-tailed quoll is a reddish-brown fur and white spots tail quoll.', 'Upland closed forests', 'Habitat loss, Timber over harvesting', 'Determine the distribution and status, Protect habitat'),
 ('Reptiles', 'Allan\'s lerista', 'Allan\'s lerista is a grey or grey brown with dark scales reptile.', 'Open woodlands and black-tea tree', 'Over grazing, Cropping, Road upgrades', 'Identify suitable habitat, Establish researves'),
@@ -77,7 +76,9 @@ INSERT INTO `content` (`Class`, `Common_name`, `Description`, `Habitat`, `Reason
 ('Fish', 'Oxleyan pygmy perch', 'Oxleyan pygmy perch is a 3.5 cm small fish with light brown to olive color with some dark brown bars.', 'Freshwater lakes', 'Habitat lost, Illegal fishing', 'Protect and restore essential habitats, Reduce the illegal fishing, Minimise the impacts of introduced fish'),
 ('Mammals', 'Blue whale', 'Blue whale is the largest animal known with at most 29.9 m length.', 'Oceans', 'Over-fishing, Water pollution, Climate change, Disease', 'Measure and monitor population, Limit fishing, Improve water quality'),
 ('Mammals', 'Subantarctic fur seal', 'Subantarctic fur seal is a medium size fur seal with creamy-orange chests and faces.', 'Oceans', 'Hunting, Ocean pollution, Climate change', 'Monitor population, Limit hunting'),
-('Reptiles', 'Gulf snapping turtle', 'Gulf snapping turtle is a medium to large sized short-necked, brown to black colored turtle (40 cm).', 'Deep water pools', 'Feral pigs, Fire, Hunting, Climate change', 'Control feral pigs, Protect habitat, Limit hunting');
+('Reptiles', 'Gulf snapping turtle', 'Gulf snapping turtle is a medium to large sized short-necked, brown to black colored turtle (40 cm).', 'Deep water pools', 'Feral pigs, Fire, Hunting, Climate change', 'Control feral pigs, Protect habitat, Limit hunting'),
+('Reptiles', 'Mary River turtle', 'Mary River turtle is a turtle with smooth and dull back and long tail.', 'Clear, slow moving water', 'Illegal trading, Water pollution', 'Feral animals control, Protect nesting sites, Monitor water quality'),
+('Mammals', 'Spectacled flying fox', 'Spectacled flying foxes have distinctive straw-coloured fur around the eyes and white fur on shoulders.', 'Tall rainforests and gallery forest', 'Grazing and urban development, Feral dogs and cats', 'Establish researves, Control feral animals');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
