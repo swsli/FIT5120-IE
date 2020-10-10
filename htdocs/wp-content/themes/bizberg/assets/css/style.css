@@ -521,10 +521,11 @@ header .navbar-default .navbar-nav > li > a:hover:after{display: none;}
     box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.4);
 }
 
-.navbar.sticky .navbar-nav li ul{top: 74px;}
-
 .navbar-nav li ul li a {
-    display: block;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    line-height: 1.8;
     padding: 10px 15px;
     font-size: 12px;
     font-weight: 500;
@@ -550,9 +551,9 @@ header .navbar-default .navbar-nav > li > a:hover:after{display: none;}
     transition: all ease-in-out 0.3s;
 }
 
-.navbar-nav li a i {
+/*.navbar-nav li a i {
     float: right;
-}
+}*/
 
 .navbar-nav li ul li ul {
     position: absolute;
@@ -5460,7 +5461,7 @@ body.page #blog{
 
 .navbar-nav li a i.has_sub_menu_parent.fa.fa-angle-down {
     position: relative;
-    top: 7px;
+    /*top: 7px;*/
     left: 5px;
     font-size: 12px;
 }
@@ -5655,7 +5656,8 @@ body:not(.page-template-page-fullwidth-transparent-header) header#masthead #top-
 
 .navbar.sticky .header-search .search-box-wrap{top: 69px;}
 .navbar-nav ul.sub-menu li a i {
-    margin-top: 7px;
+    /*margin-top: 5px;
+    float: right;*/
 }
 
 .page-fullwidth-transparent-header.theme-sticky .header-search .search-form input#searchsubmit, 
@@ -5802,9 +5804,11 @@ span.ts-text {
 
 .navbar-default .has-no-menu-description .navbar-nav>li>a.menu_custom_btn{padding: 8px 16px;}
 
-.navbar-default .has-no-menu-description .navbar-nav li ul{top: 77px;}
+.navbar-default .has-no-menu-description .navbar-nav li ul{top: 75px;}
 
 /*.has-no-menu-description .header-search i{margin-top: 24px;}*/
+
+.navbar.sticky .navbar-nav li ul{top: 77px;}
 
 .has-no-menu-description .header-search .search-box-wrap{top: 66px;}
 
@@ -6665,4 +6669,16 @@ div.enlighter{
 
 .detail-content.single_page blockquote.wp-block-quote p{
     margin-bottom: 0;
+}
+
+.bizberg_transparent_header  header .sticky .logo .transparent_sticky_logo_header{
+    display: block !important;
+}
+
+.bizberg_transparent_header header .sticky .logo .transparent_header_logo_image1{
+    display: none;
+}
+
+.bizberg .slicknav_nav .slicknav_arrow{
+    margin: 0;
 }

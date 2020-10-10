@@ -6,8 +6,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
-	
-	 
+
 <?php
 $body_class = ''; 
 if( function_exists( 'bizberg_get_homepage_style_class' ) ){
@@ -198,4 +197,3 @@ if( is_page_template( 'page-templates/full-width.php' )
 	}
 
 } 
-	

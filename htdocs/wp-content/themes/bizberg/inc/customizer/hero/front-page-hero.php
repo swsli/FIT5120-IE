@@ -338,7 +338,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'zoom_in_out_status',
 	'label'       => esc_html__( 'Disable Zoom In Out Effect ?', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => 'kbrns_zoomInOut 15s linear 0s infinite alternate',
+	'default'     => 'none',
 	'choices'     => [
 		'none'   => esc_html__( 'Disable', 'bizberg' ),
 		'kbrns_zoomInOut 15s linear 0s infinite alternate' => esc_html__( 'Enable', 'bizberg' ),
@@ -364,7 +364,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'slider_loop_status',
 	'label'       => esc_html__( 'Enable Loop ?', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => false,
+	'default'     => true,
 	'active_callback'    => array(
 		array(
 			'setting'  => 'slider_banner',
@@ -434,7 +434,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'slider_text_align',
 	'label'       => esc_html__( 'Text Align', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => 'left',
+	'default'     => apply_filters( 'bizberg_slider_text_align', 'left' ),
 	'choices'     => [
 		'left'   => esc_html__( 'Left', 'bizberg' ),
 		'center' => esc_html__( 'Center', 'bizberg' ),
@@ -467,7 +467,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'slider_title_layout',
 	'label'       => esc_html__( 'Layout', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => '2',
+	'default'     => apply_filters( 'bizberg_slider_title_layout', '2' ),
 	'choices'     => [
 		'1' => 'Default',
 		'2' => 2,
@@ -744,7 +744,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'read_more_text_color',
 	'label'       => __( 'Button Text Color', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => '#fff',
+	'default'     => apply_filters( 'bizberg_read_more_text_color', '#fff' ),
 	'transport' => 'auto',
 	'output' => array(
 		array(

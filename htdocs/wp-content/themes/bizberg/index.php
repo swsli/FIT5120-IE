@@ -9,6 +9,19 @@ get_header(); ?>
 
 		    <div class="row">
 
+		    	<?php 
+		    	$homepage_blog_title = bizberg_get_theme_mod( 'homepage_blog_title' );
+
+		    	if( !empty( $homepage_blog_title ) ){ ?>
+
+			    	<div class="col-sm-12">			    		
+			    		<h2 class="homepage_blog_title"><?php echo esc_html( $homepage_blog_title ); ?></h2>
+			    	</div>
+
+			    	<?php 
+
+			    } ?>
+
 		    	<div class="<?php echo bizberg_check_sidebar_active_inactive_class_home(); ?>">	    		
 
 					<?php

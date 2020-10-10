@@ -208,6 +208,23 @@ Kirki::add_field( 'bizberg', array(
 
 Kirki::add_field( 'bizberg', array(
 	'type'        => 'color',
+	'settings'    => 'transparent_header_button_color_text',
+	'label'       => esc_html__( 'Button Text Color', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => apply_filters( 'bizberg_transparent_header_button_color_text', '#fff' ),
+	'transport' => 'auto',
+	'output'    => array(
+		array(
+			'element'  => 'body.bizberg_transparent_header header#masthead nav:not(.sticky) .menu_custom_btn',
+			'property' => 'color',
+			'suffix'   => ' !important',
+			'media_query' => '@media only screen and (min-width: 1025px)'
+		),
+	)
+) );
+
+Kirki::add_field( 'bizberg', array(
+	'type'        => 'color',
 	'settings'    => 'transparent_header_button_color',
 	'label'       => esc_html__( 'Button Color', 'bizberg' ),
 	'section'     => 'transparent_header',
@@ -215,7 +232,7 @@ Kirki::add_field( 'bizberg', array(
 	'transport' => 'auto',
 	'output'    => array(
 		array(
-			'element'  => 'body.bizberg_transparent_header header#masthead .menu_custom_btn',
+			'element'  => 'body.bizberg_transparent_header header#masthead nav:not(.sticky) .menu_custom_btn',
 			'property' => 'background',
 			'suffix'   => ' !important',
 			'media_query' => '@media only screen and (min-width: 1025px)'
@@ -232,7 +249,7 @@ Kirki::add_field( 'bizberg', array(
 	'transport' => 'auto',
 	'output'    => array(
 		array(
-			'element'  => 'body.bizberg_transparent_header header#masthead .navbar-default .navbar-nav>li>a.menu_custom_btn:hover, body.bizberg_transparent_header header#masthead .page-fullwidth-transparent-header .navbar-default .navbar-nav>li>a.menu_custom_btn:hover',
+			'element'  => 'body.bizberg_transparent_header header#masthead .navbar-default:not(.sticky) .navbar-nav>li>a.menu_custom_btn:hover, body.bizberg_transparent_header header#masthead .page-fullwidth-transparent-header .navbar-default:not(.sticky) .navbar-nav>li>a.menu_custom_btn:hover',
 			'property' => 'background',
 			'suffix'   => ' !important',
 			'media_query' => '@media only screen and (min-width: 1025px)'
@@ -249,7 +266,7 @@ Kirki::add_field( 'bizberg', array(
 	'transport'   => 'auto',
 	'output'    => array(
 		array(
-			'element'  => 'body.bizberg_transparent_header header#masthead .navbar-default .navbar-nav>li>a.menu_custom_btn,body.bizberg_transparent_header header#masthead .navbar-default .has-no-menu-description .navbar-nav>li>a.menu_custom_btn',
+			'element'  => 'body.bizberg_transparent_header header#masthead .navbar-default:not(.sticky) .navbar-nav>li>a.menu_custom_btn,body.bizberg_transparent_header header#masthead .navbar-default:not(.sticky) .has-no-menu-description .navbar-nav>li>a.menu_custom_btn',
 			'property' => 'border-color',
 			'media_query' => '@media only screen and (min-width: 1025px)'
 		),
@@ -284,6 +301,15 @@ Kirki::add_field( 'bizberg', array(
     'section'     => 'transparent_header',
     'default'     => '<div class="bizberg_customizer_custom_heading">' . esc_html__( 'Transparent Header Sticky Options', 'bizberg' ) . '</div>',
 ) );
+
+Kirki::add_field( 'bizberg', [
+	'type'        => 'image',
+	'settings'    => 'sticky_transparent_header_logo',
+	'label'       => esc_html__( 'Sticky Logo', 'bizberg' ),
+	'description' => esc_html__( 'Will be used only where transparent header is enabled and when the user scrolls the page.', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => ''
+] );
 
 Kirki::add_field( 'bizberg', array(
 	'type'        => 'color',
@@ -321,6 +347,73 @@ Kirki::add_field( 'bizberg', array(
 		array(
 			'element'  => 'body.bizberg_transparent_header header#masthead .sticky .bizberg_header_wrapper h3,body.bizberg_transparent_header header#masthead .sticky .primary_header_2 h3, body.bizberg_transparent_header header#masthead .sticky .bizberg_header_wrapper p, body.bizberg_transparent_header header#masthead .sticky .primary_header_2 p',
 			'property' => 'color',
+		),
+	)
+) );
+
+Kirki::add_field( 'bizberg', array(
+	'type'        => 'color',
+	'settings'    => 'transparent_header_sticky_button_color_text',
+	'label'       => esc_html__( 'Button Text Color', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => apply_filters( 'bizberg_transparent_header_sticky_button_color_text', '#fff' ),
+	'transport' => 'auto',
+	'output'    => array(
+		array(
+			'element'  => 'body.bizberg_transparent_header header#masthead nav.sticky .menu_custom_btn',
+			'property' => 'color',
+			'suffix'   => ' !important',
+			'media_query' => '@media only screen and (min-width: 1025px)'
+		),
+	)
+) );
+
+Kirki::add_field( 'bizberg', array(
+	'type'        => 'color',
+	'settings'    => 'transparent_header_sticky_button_color',
+	'label'       => esc_html__( 'Button Color', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => apply_filters( 'bizberg_transparent_header_sticky_button_color', '#0088cc' ),
+	'transport' => 'auto',
+	'output'    => array(
+		array(
+			'element'  => 'body.bizberg_transparent_header header#masthead nav.sticky .menu_custom_btn',
+			'property' => 'background',
+			'suffix'   => ' !important',
+			'media_query' => '@media only screen and (min-width: 1025px)'
+		),
+	)
+) );
+
+Kirki::add_field( 'bizberg', array(
+	'type'        => 'color',
+	'settings'    => 'transparent_header_sticky_button_color_hover',
+	'label'       => esc_html__( 'Button Color ( Hover )', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => apply_filters( 'bizberg_transparent_header_sticky_button_color_hover', '#0088cc' ),
+	'transport' => 'auto',
+	'output'    => array(
+		array(
+			'element'  => 'body.bizberg_transparent_header header#masthead .navbar-default.sticky .navbar-nav>li>a.menu_custom_btn:hover, body.bizberg_transparent_header header#masthead .page-fullwidth-transparent-header .navbar-default.sticky .navbar-nav>li>a.menu_custom_btn:hover',
+			'property' => 'background',
+			'suffix'   => ' !important',
+			'media_query' => '@media only screen and (min-width: 1025px)'
+		),
+	)
+) );
+
+Kirki::add_field( 'bizberg', array(
+	'type'        => 'color',
+	'settings'    => 'transparent_header_sticky_button_border_color',
+	'label'       => esc_html__( 'Button Border Color', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => apply_filters( 'bizberg_transparent_header_sticky_button_border_color', '#026191' ),
+	'transport'   => 'auto',
+	'output'    => array(
+		array(
+			'element'  => 'body.bizberg_transparent_header header#masthead .navbar-default.sticky .navbar-nav>li>a.menu_custom_btn,body.bizberg_transparent_header header#masthead .navbar-default.sticky .has-no-menu-description .navbar-nav>li>a.menu_custom_btn',
+			'property' => 'border-color',
+			'media_query' => '@media only screen and (min-width: 1025px)'
 		),
 	)
 ) );

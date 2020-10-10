@@ -261,7 +261,13 @@ function bizberg_check_transparent_header(){
 		return true;
 	}
 
-	if( is_page( bizberg_get_transparent_header_page_ids() ) ){
+	$pages = bizberg_get_transparent_header_page_ids();
+
+	if( empty( $pages ) ){
+		return false;
+	}
+
+	if( is_page( $pages ) ){
 		return true;
 	}
 
@@ -1737,13 +1743,30 @@ function bizberg_get_primary_header_logo(){ ?>
     href="<?php echo esc_url( home_url('/') ); ?>">
 
     	<?php 
-    	if ( has_custom_logo() ) { ?>
+    	$transparent_header_logo = bizberg_get_theme_mod( 'transparent_header_logo' );
+
+    	/**
+		* If transparent header is enabled on the page
+    	*/
+
+    	if ( bizberg_check_transparent_header() && !empty( $transparent_header_logo ) ) { ?>
+
+        	<img 
+        	src="<?php echo esc_url( bizberg_get_custom_logo_link() ); ?>" 
+        	alt="<?php esc_attr_e( 'Logo', 'bizberg' ) ?>" 
+        	class="site_logo transparent_header_logo_image1">
+        	<?php 
+        	do_action( 'bizberg_top_logo' );
+
+        } elseif( has_custom_logo() ){ ?>
+
         	<img 
         	src="<?php echo esc_url( bizberg_get_custom_logo_link() ); ?>" 
         	alt="<?php esc_attr_e( 'Logo', 'bizberg' ) ?>" 
         	class="site_logo">
-        	<?php 
-        	do_action( 'bizberg_top_logo' );
+
+        	<?php
+
         } else {
         	echo '<h3 class="header_site_title">' . esc_html( get_bloginfo( 'name' ) ) . '</h3>';
 
@@ -1756,6 +1779,23 @@ function bizberg_get_primary_header_logo(){ ?>
     </a>
 
 	<?php
+}
+
+add_action( 'bizberg_top_logo', 'bizberg_display_transparent_sticky_logo_on_menu' );
+function bizberg_display_transparent_sticky_logo_on_menu(){
+
+	// get sticky logo
+	$sticky_transparent_header_logo = bizberg_get_theme_mod( 'sticky_transparent_header_logo' );
+
+	// if no sticky logo, take the transparent header logo
+	$sticky_transparent_header_logo = empty( $sticky_transparent_header_logo ) ? bizberg_get_custom_logo_link() : $sticky_transparent_header_logo;
+
+	// Check if transparent header is active or not on the page
+	$transparent_header_homepage = bizberg_get_theme_mod( 'transparent_header_homepage' );
+
+	if( !empty( $sticky_transparent_header_logo ) && bizberg_check_transparent_header() ){
+		echo '<img src="' . esc_url( $sticky_transparent_header_logo ) . '" alt="' . esc_attr__( 'Logo', 'bizberg' ) . '" class="transparent_sticky_logo_header" style="display:none;"/>';	
+	}	
 }
 
 function bizberg_get_last_item_header(){
@@ -2137,7 +2177,7 @@ function bizberg_get_transparent_header_page_ids(){
 
 }
 
-add_filter( 'theme_mod_custom_logo', 'bizberg_set_page_options_custom_logo' );
+add_filter( 'theme_mod_custom_logo', 'bizberg_set_page_options_custom_logo' , 999 );
 function bizberg_set_page_options_custom_logo( $default ){
 	return bizberg_get_page_options_header( 'transparent_header_logo' , $default );
 }
