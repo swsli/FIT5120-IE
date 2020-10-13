@@ -61,7 +61,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'site_title_font',
 	'label'       => esc_html__( 'Site Title Font Options', 'bizberg' ),
 	'section'     => 'base-typography',
-	'default'     => [
+	'default'     => apply_filters( 'bizberg_site_title_font', [
 		'font-family'    => 'Playfair Display',
 		'variant'        => 'regular',
 		'font-size'      => '23px',
@@ -69,7 +69,7 @@ Kirki::add_field( 'bizberg', [
 		'letter-spacing' => '0',
 		'text-transform' => 'none',
 		'text-align'     => 'left',
-	],
+	]),
 	'transport'   => 'auto',
 	'output'      => [
 		[
@@ -127,7 +127,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'site_title_font_sticky_menu',
 	'label'       => esc_html__( 'Site Title Font Size ( Sticky Desktop )', 'bizberg' ),
 	'section'     => 'base-typography',
-	'default'     => 23,
+	'default'     => apply_filters( 'bizberg_site_title_font_sticky_menu', 23 ),
 	'choices'     => [
 		'min'  => 0,
 		'max'  => 80,
@@ -156,7 +156,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'site_tagline_font',
 	'label'       => esc_html__( 'Tagline Font Options', 'bizberg' ),
 	'section'     => 'base-typography',
-	'default'     => [
+	'default'     => apply_filters( 'bizberg_site_tagline_font', [
 		'font-family'    => 'Open Sans',
 		'variant'        => '300',
 		'font-size'      => '13px',
@@ -164,7 +164,7 @@ Kirki::add_field( 'bizberg', [
 		'letter-spacing' => '0',
 		'text-transform' => 'none',
 		'text-align'     => 'left',
-	],
+	]),
 	'transport'   => 'auto',
 	'output'      => [
 		[
@@ -222,7 +222,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'site_tagline_font_sticky_menu',
 	'label'       => esc_html__( 'Site Tagline Font Size ( Sticky Desktop )', 'bizberg' ),
 	'section'     => 'base-typography',
-	'default'     => 13,
+	'default'     => apply_filters( 'bizberg_site_tagline_font_sticky_menu', 13 ),
 	'choices'     => [
 		'min'  => 0,
 		'max'  => 80,

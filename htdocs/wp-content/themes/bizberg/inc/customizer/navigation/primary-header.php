@@ -5,7 +5,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'primary_header_layout',
 	'label'       => esc_html__( 'Layout', 'bizberg' ),
 	'section'     => 'primary_header',
-	'default'     => 'left',
+	'default'     => apply_filters( 'bizberg_primary_header_layout', 'left' ),
 	'choices'     => [
 		'left'   => get_template_directory_uri() . '/assets/images/header-layout-1.jpg',
 		'center'   => get_template_directory_uri() . '/assets/images/header-layout-2.jpg',
@@ -40,10 +40,10 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'header_2_spacing',
 	'label'       => esc_html__( 'Spacing', 'bizberg' ),
 	'section'     => 'primary_header',
-	'default'     => [
+	'default'     => apply_filters( 'bizberg_header_2_spacing', [
 		'padding-top'  => '20px',
 		'padding-bottom'  => '20px',
-	],
+	]),
 	'choices'     => [
 		'labels' => [
 			'padding-top'  => esc_html__( 'Top', 'bizberg' ),
@@ -133,7 +133,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'header_columns',
 	'label'       => esc_html__( 'Columns', 'bizberg' ),
 	'section'     => 'primary_header',
-	'default'     => 'col-sm-5|col-sm-7',
+	'default'     => apply_filters( 'bizberg_header_columns', 'col-sm-5|col-sm-7' ),
 	'choices'     => [
 		'col-sm-5|col-sm-7' => esc_html__( '40% | 60%', 'bizberg' ),
 		'col-sm-6|col-sm-6' => esc_html__( '50% | 50%', 'bizberg' ),
@@ -200,7 +200,7 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'header_columns_middle_style',
 	'label'       => esc_html__( 'Columns', 'bizberg' ),
 	'section'     => 'primary_header',
-	'default'     => 'col-sm-3|col-sm-6|col-sm-3',
+	'default'     => apply_filters( 'bizberg_header_columns_middle_style', 'col-sm-3|col-sm-6|col-sm-3' ),
 	'choices'     => [
 		'col-sm-4|col-sm-4|col-sm-4' => esc_html__( '33% | 33% | 33%', 'bizberg' ),
 		'col-sm-3|col-sm-6|col-sm-3' => esc_html__( '25% | 50% | 25%', 'bizberg' ),

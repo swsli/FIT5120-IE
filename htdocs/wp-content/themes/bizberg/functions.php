@@ -228,6 +228,16 @@ function bizberg_scripts() {
 
 	wp_enqueue_script('masonry');
 
+	/** 
+	* @since 4.1.6
+	* If true then enqueue slick slider js
+	* This is for the child theme. In child theme there are sliders that uses slick 
+	*/
+
+	if( apply_filters( 'bizberg_slick_slider_status', false ) ){
+		wp_enqueue_script( 'slick' , get_template_directory_uri() . '/assets/js/slick.js' , array('jquery') , $current_version , true );
+	}
+
 	bizberg_add_scripts( $scripts , $current_version );
 
 	wp_register_script( 'bizberg-custom' , get_template_directory_uri() . '/assets/js/custom.js' , array('jquery') , $current_version , true );
@@ -243,7 +253,7 @@ function bizberg_scripts() {
 	   'primary_header_layout' => bizberg_get_theme_mod( 'primary_header_layout' ),
 	   'slide_in_animation' => bizberg_get_theme_mod( 'header_menu_slide_in_animation' ),
 	);
-	wp_localize_script( 'bizberg-custom', 'bizberg_object', $translation_array );
+	wp_localize_script( 'bizberg-custom', 'bizberg_object', apply_filters( 'bizberg_localize_scripts', $translation_array ) );
 	 
 	// Enqueued script with localized data.
 	wp_enqueue_script( 'bizberg-custom' );
@@ -2258,6 +2268,10 @@ function bizberg_get_pro_link(){
 
 		case 'business-event':
 			return 'https://bizbergthemes.com/downloads/business-event-pro/';
+			break;
+
+		case 'my-travel-blogs':
+			return 'https://bizbergthemes.com/downloads/my-travel-blogs-pro/';
 			break;
 		
 		default:

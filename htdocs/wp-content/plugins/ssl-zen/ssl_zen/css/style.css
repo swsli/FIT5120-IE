@@ -1582,6 +1582,10 @@ label.error {
 .loader__dot:nth-child(2) { animation-delay: 250ms }
 .loader__dot:nth-child(3) { animation-delay: 500ms }
 
+.sslzen-nowrap {
+	white-space: pre-wrap !important;
+}
+
 /*=========== responsive styles ========*/
 @media screen and (max-width: 1200px) {
     .ssl-zen-install-certificate-container div.cpanel div.body ul > li > div {

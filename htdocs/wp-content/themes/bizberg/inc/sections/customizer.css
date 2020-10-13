@@ -472,7 +472,11 @@ a.pro_feature_btn {
 */
 
 #accordion-section-base-typography h3.accordion-section-title,
-#accordion-section-headings h3.accordion-section-title{
+#accordion-section-headings h3.accordion-section-title,
+#accordion-section-eye_catching_blog_slider h3.accordion-section-title,
+#accordion-section-eye_catching_blog_featured_posts h3.accordion-section-title,
+#accordion-section-eye_catching_blog_popular_news h3.accordion-section-title,
+#accordion-section-eye_catching_blog_editor_choice h3.accordion-section-title {
     color: #555d66 !important;
     background-color: #fff !important;
     border-bottom: 1px solid #ddd !important;
@@ -482,19 +486,39 @@ a.pro_feature_btn {
 #accordion-section-base-typography h3.accordion-section-title:hover,
 #accordion-section-base-typography h3.accordion-section-title:focus,
 #accordion-section-headings h3.accordion-section-title:hover,
-#accordion-section-headings h3.accordion-section-title:focus{
+#accordion-section-headings h3.accordion-section-title:focus,
+#accordion-section-eye_catching_blog_slider h3.accordion-section-title:hover,
+#accordion-section-eye_catching_blog_slider h3.accordion-section-title:focus,
+#accordion-section-eye_catching_blog_featured_posts h3.accordion-section-title:hover,
+#accordion-section-eye_catching_blog_featured_posts h3.accordion-section-title:focus,
+#accordion-section-eye_catching_blog_popular_news h3.accordion-section-title:hover,
+#accordion-section-eye_catching_blog_popular_news h3.accordion-section-title:focus,
+#accordion-section-eye_catching_blog_editor_choice h3.accordion-section-title:hover,
+#accordion-section-eye_catching_blog_editor_choice h3.accordion-section-title:focus {
     color: #0073aa !important;
     background: #f3f3f5 !important;
     border-left-color: #0073aa !important;
 }
 #accordion-section-base-typography h3.accordion-section-title::after,
-#accordion-section-headings h3.accordion-section-title:after{
+#accordion-section-headings h3.accordion-section-title:after,
+#accordion-section-eye_catching_blog_slider h3.accordion-section-title:after,
+#accordion-section-eye_catching_blog_featured_posts h3.accordion-section-title:after,
+#accordion-section-eye_catching_blog_popular_news h3.accordion-section-title:after,
+#accordion-section-eye_catching_blog_editor_choice h3.accordion-section-title:after {
     color: #a0a5aa !important;
 }
 #accordion-section-base-typography h3.accordion-section-title:hover:after,
 #accordion-section-base-typography h3.accordion-section-title:focus:after,
 #accordion-section-headings h3.accordion-section-title:hover:after,
-#accordion-section-headings h3.accordion-section-title:focus:after{
+#accordion-section-headings h3.accordion-section-title:focus:after,
+#accordion-section-eye_catching_blog_slider h3.accordion-section-title:hover:after,
+#accordion-section-eye_catching_blog_slider h3.accordion-section-title:focus:after,
+#accordion-section-eye_catching_blog_featured_posts h3.accordion-section-title:hover:after,
+#accordion-section-eye_catching_blog_featured_posts h3.accordion-section-title:focus:after,
+#accordion-section-eye_catching_blog_popular_news h3.accordion-section-title:hover:after,
+#accordion-section-eye_catching_blog_popular_news h3.accordion-section-title:focus:after,
+#accordion-section-eye_catching_blog_editor_choice h3.accordion-section-title:hover:after,
+#accordion-section-eye_catching_blog_editor_choice h3.accordion-section-title:focus:after {
     color: #0073aa !important;
 }
 

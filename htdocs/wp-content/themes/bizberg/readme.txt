@@ -56,55 +56,70 @@ Bizberg Theme bundles the following third-party resources:
 == Javascript ==
 
 jquery.inview.js
-Licenses: MIT
-Source: https://github.com/zuk/jquery.inview/
+Licenses : MIT
+Source   : https://github.com/zuk/jquery.inview/
 
 jquery.isotope.js
-Licenses: GPL
-Source: https://github.com/metafizzy/isotope
+Licenses : GPL
+Source   : https://github.com/metafizzy/isotope
 
 jquery.matchHeight.js
-License: MIT
-Source: https://github.com/liabru/jquery-match-height
+License : MIT
+Source  : https://github.com/liabru/jquery-match-height
 
 jQuery.mousewheel.js
-License: MIT
-Source: https://github.com/jquery/jquery-mousewheel
+License : MIT
+Source  : https://github.com/jquery/jquery-mousewheel
 
 jQuery.slicknav.js
-License: MIT
-Source: https://github.com/ComputerWolf/SlickNav
+License : MIT
+Source  : https://github.com/ComputerWolf/SlickNav
 
 swiper.js
-License: MIT
-Source: https://github.com/nolimits4web/swiper
+License : MIT
+Source  : https://github.com/nolimits4web/swiper
 
 Bootstrap
-Licenses: MIT
-Source: http://getbootstrap.com/
+Licenses : MIT
+Source   : http://getbootstrap.com/
 
 Font Awesome v5.8.1
-Licenses: MIT
-Source: http://fontawesome.io/
+Licenses : MIT
+Source   : http://fontawesome.io/
 
 TGM Plugin Activation
-Source:  http://tgmpluginactivation.com/
-Licenses: GPLv2 or later
+Source   :  http://tgmpluginactivation.com/
+Licenses : GPLv2 or later
 
 PrognRoll
-Source:  https://github.com/mburakerman/prognroll
-Licenses: MIT
+Source   :  https://github.com/mburakerman/prognroll
+Licenses : MIT
+
+Slick
+Url     : http://github.com/kenwheeler/slick
+License : MIT
+Version : 1.8.1
+Author  : Ken Wheeler
 
 == Images ==
 
 breadcrum.jpg
-License: CC0
-Source: https://stocksnap.io/photo/DZ7DC58DSV
+License : CC0
+Source  : https://stocksnap.io/photo/DZ7DC58DSV
+
+= Below images are self made and licensed under CCO =
+
+header-layout-1.jpg
+header-layout-2.jpg
+header-layout-3.jpg
+logo.png
+placeholder.jpg
+/shape-divider/*.png
 
 Images used on screenshot
 
-Source: https://pxhere.com/en/photo/113574
-License: CC0
+Source  : https://pxhere.com/en/photo/113574
+License : CC0
 
 == Google Fonts ==
 
