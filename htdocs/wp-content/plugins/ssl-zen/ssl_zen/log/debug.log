@@ -1,0 +1,135 @@
+[15-10-2020 08:07:08] function LEAccount __construct:
+No account found, attempting to create account.
+
+[15-10-2020 08:07:10] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:07:10] function LEOrder __construct:
+No order found for 'www.blazingforest.tk'. Creating new order.
+
+[15-10-2020 08:07:13] function createOrder (function LEOrder __construct):
+Created order for 'www.blazingforest.tk'.
+
+[15-10-2020 08:07:14] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:07:16] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:17:14] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:17:16] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:17:18] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:17:58] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:18:00] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:18:01] function verifyPendingOrderAuthorization:
+DNS challenge for 'blazingforest.tk' tested locally, found invalid.
+
+[15-10-2020 08:18:01] function verifyPendingOrderAuthorization:
+DNS challenge for 'www.blazingforest.tk' tested locally, found invalid.
+
+[15-10-2020 08:18:02] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:23:10] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:23:12] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:23:13] function verifyPendingOrderAuthorization:
+DNS challenge for 'blazingforest.tk' valid.
+
+[15-10-2020 08:23:15] function verifyPendingOrderAuthorization:
+DNS challenge for 'www.blazingforest.tk' valid.
+
+[15-10-2020 08:23:18] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:23:18] function LEOrder __construct:
+Order data for 'www.blazingforest.tk' invalid. Deleting order data and creating new order.
+
+[15-10-2020 08:23:22] function createOrder (function LEOrder __construct):
+Created order for 'www.blazingforest.tk'.
+
+[15-10-2020 08:23:28] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:23:30] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 08:23:32] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:15:25] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:15:25] function LEOrder __construct:
+No order found for 'www.blazingforest.tk'. Creating new order.
+
+[15-10-2020 09:15:27] function createOrder (function LEOrder __construct):
+Created order for 'www.blazingforest.tk'.
+
+[15-10-2020 09:15:28] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:27:34] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:27:36] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:27:38] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:29:24] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:29:27] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:29:29] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:30:42] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:30:44] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:11] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:13] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:15] function verifyPendingOrderAuthorization:
+DNS challenge for 'www.blazingforest.tk' valid.
+
+[15-10-2020 09:31:17] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:33] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:35] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:38] function finalizeOrder:
+Order for 'www.blazingforest.tk' finalized.
+
+[15-10-2020 09:31:39] function LEClient __construct:
+LEClient finished constructing
+
+[15-10-2020 09:31:40] function getCertificate:
+Certificate for 'www.blazingforest.tk' saved
+

@@ -6,7 +6,7 @@ Requires at least: 4.2
 License: GPL3
 Tested up to: 5.5
 Requires PHP: 5.4
-Stable tag: 3.0.8
+Stable tag: 3.0.1
 
 Helps install a free SSL certificate, fixes mixed content, insecure content by redirecting to https, and forces SSL on all pages.
 
@@ -20,42 +20,23 @@ SSL Zen helps you to secure your website, protect your customer's data and show 
 
 
 = Features of Free Version: =
-* Secure padlock in the browser
-* Displays 'connection is secure' message
-* Increased SEO ranking
-* Customers will trust you
-* Accept safe payments online
-* Compliance with regulation standards
-* Strong bank-level security
+* Secure padlock in the browser.
+* Displays 'connection is secure' message.
+* Increased SEO ranking.
+* Customers will trust you.
+* Accept safe payments online.
+* Compliance with regulation standards.
+* Strong bank-level security.
 
 Note: The free version requires you to manually verify your domain name with Let's Encrypt by uploading a file on your server. You will also need to upload the SSL certificates on your server and configure them.
 SSL certificates from Let's Encrypt are only valid for 90 days and need to be manually renewed. If you fail to renew, your website will start showing a not secure warning to the visitors.
 If you want the plugin to automatically install the SSL certificate and auto-renew it, please check the premium version of the plugin.
 
 = Features of Premium Version: =
-* Automatic Domain Verification
-* Automatic SSL Certificate Generation
-* Automatic SSL Certificate Renewal
-* Accelerate your website with StackPath's Global Content Delivery Network
-* Premium Support - Live Chat, Email Support
-* Spam Protection
-* Brute-Force Protection
-* Forces Browser Validation on traffic anomalies
-* Performs Real-time threat intelligence for IP addresses, source location, and information on malicious IPs.
-* Patches known vulnerabilities in the Apache Struts framework by blocking requests suspected of exploiting these vulnerabilities
-* Enables a set of rules designed to block common Wordpress exploits
-* Blocks clients performing multiple injection attacks.
-* Blocks Probing and Forced Browsing
-* Blocks SQL injection attack attempts
-* Blocks Cross-Site-Scripting (XSS) attack attempts
-* Blocks Shellshock attack attempts
-* Blocks requests suspected of being a Remote File Inclusion attempt
-* Blocks requests suspected of a Local File Inclusion attempt
-* Blocks attempts to access and potentially harm your servers through backdoors
-* Blocks requests suspected of web shell attempts
-* Blocks requests suspected of Response header injection attempts
-* Blocks Invalid User Agents
-* Blocks Unknown User Agents
+* Free Private EdgeSSL™ Certificate by Sectigo. No activation or configuration required. Automatic Renewal.
+* Accelerate your website with StackPath's Global Content Delivery Network.
+* Enterprise-Grade Web Application Firewall protects your website from the vulnerabilities, threats, and attacks.
+* Premium one-on-one unlimited support.
 
 
 = Why get a SSL padlock? =
@@ -67,12 +48,6 @@ If you want the plugin to automatically install the SSL certificate and auto-ren
 If our plugin helped you secure your website, please leave a [review here](https://wordpress.org/support/plugin/ssl-zen/reviews/#new-post)
 
 For more information about our plugin, please visit [sslzen.com](https://sslzen.com)
-
-Legal:
-- By downloading our plugin, You agree to Let’s Encrypt® [Terms of Service](https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf)
-- By downloading our plugin, You agree to [LEClient license terms](https://github.com/yourivw/LEClient/blob/master/LICENSE), a PHP LetsEncrypt client library to verify domain ownership and generate SSL certificate for your website.
-- We use [Let's Debug](https://letsdebug.net/) API, a diagnostic tool to help figure out why you might not be able to issue a certificate for Let's Encrypt®.
-- We use [Freemius](https://freemius.com) to collect non-sensitive diagnostic data about your website should you opt-in.
 
 Internet Security Research Group™, Let’s Encrypt®, ISRG™ are trademarks of the Internet Security Research Group. StackPath®, EdgeSSL™ are trademarks of StackPath, LLC. All rights reserved.
 
@@ -139,30 +114,6 @@ Free certificates are of Domain Validation type (DV) and do not hold that inform
 7. Settings to enable 301 redirection the settings page.
 
 == Changelog ==
-= 3.0.8 =
-* Changed pricing structure for premium versions
-
-= 3.0.7 =
-* Improved Re-Activation process for StackPath
-* Improved error messaging
-
-= 3.0.6 =
-* Changed pricing of premium version to $36
-
-= 3.0.5 =
-* Updated Freemius SDK
-* Improved StackPath DNS verification
-* Added option to reset plugin for StackPath
-
-= 3.0.4 =
-* Pricing page has been hidden so users are redirected to buy the correct plan
-* Updated cPanel Availability script
-
-= 3.0.3 =
-* Added better error messages for StackPath DNS verification
-
-= 3.0.2 =
-* Fixed a bug that was not displaying Let's Encrypt Debug Log
 
 = 3.0.1 =
 * Fixed a bug that would pass A record for www.domain.tld instead of domain.tld for StackPath

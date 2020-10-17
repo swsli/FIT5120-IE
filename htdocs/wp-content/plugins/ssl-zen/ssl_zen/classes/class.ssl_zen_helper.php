@@ -148,9 +148,7 @@ if ( ! class_exists( 'ssl_zen_helper' ) ) {
 		 * @return bool
 		 */
 		public static function checkCPanelAvailabilityOfCurrentSite() {
-			$host = untrailingslashit( str_ireplace( array( 'https://', 'http://' ), '', site_url() ) );
-
-			$url      = is_ssl() ? "https://$host:2083" : "http://$host:2082";
+			$url      = is_ssl() ? 'https://localhost:2083' : 'http://localhost:2082';
 			$response = wp_remote_get( $url, [
 				'headers'   => [
 					'Connection' => 'close'
@@ -158,7 +156,11 @@ if ( ! class_exists( 'ssl_zen_helper' ) ) {
 				'sslverify' => false
 			] );
 
-			return ! is_wp_error( $response );
+			if ( is_wp_error( $response ) ) {
+				return false;
+			} else {
+				return true;
+			}
 		}
 
 		/**
@@ -256,11 +258,7 @@ if ( ! class_exists( 'ssl_zen_helper' ) ) {
 		public static function log( $msg, $type = 'debug', $write_to_db = true ) {
 			// always write to default error log if switch is on or type is error or warning.
 			if ( SSL_ZEN_PLUGIN_ALLOW_DEBUG || in_array( $type, array( 'error', 'warn' ), true ) ) {
-				error_log( sprintf( '%s --- %s: %s', 'SSLZenClient', strtoupper( $type ), $msg ) );
-			}
-
-			if ( SSL_ZEN_PLUGIN_ALLOW_DEV ) {
-				return;
+				error_log( $msg );
 			}
 
 			if ( $write_to_db ) {
