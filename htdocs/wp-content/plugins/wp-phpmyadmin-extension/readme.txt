@@ -1,7 +1,7 @@
 === WP phpMyAdmin ===
 
 Tags			 : phpmyadmin,phpminiadmin,mysql,sql,database,manager,management,browser
-Stable tag		 : 3.03.1
+Stable tag		 : 5.0.4
 WordPress URI	 : https://wordpress.org/plugins/wp-phpmyadmin-extension/
 Plugin URI		 : https://puvox.software/wordpress/
 Contributors	 : puvoxsoftware,ttodua
@@ -11,7 +11,7 @@ Donate link		 : https://paypal.me/puvox
 License			 : GPL-3.0
 License URI		 : https://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 4.4
-Tested up to	 : 5.4
+Tested up to	 : 5.5.1
 
 [ ✅ 𝐒𝐄𝐂𝐔𝐑𝐄 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 b𝓎 𝒫𝓊𝓋𝑜𝓍 ]
 phpMyAdmin -  Database Browser & Manager (for MySQL & MariaDB)

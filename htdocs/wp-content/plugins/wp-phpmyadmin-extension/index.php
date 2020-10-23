@@ -4,7 +4,7 @@
  * Description:		The famous database browser & manager (for MySQL & MariaDB) - use it inside WordPress Dashboard without an extra hassle.
  * Text Domain:		wp-phpmyadmin-extension
  * Domain Path:		/languages
- * Version:			3.03.1
+ * Version:			5.0.4
  * WordPress URI:	https://wordpress.org/plugins/wp-phpmyadmin-extension/
  * Plugin URI:		https://puvox.software/wordpress/
  * Contributors: 	puvoxsoftware,ttodua
