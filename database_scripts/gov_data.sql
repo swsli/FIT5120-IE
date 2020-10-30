@@ -1,27 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3307
--- Generation Time: Sep 09, 2020 at 08:12 AM
--- Server version: 8.0.21
--- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `endangered_animal`
---
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `gov_data`
@@ -103,17 +83,8 @@ INSERT INTO `gov_data` (`Taxon_Id`, `Class`, `Family`, `Scientific_name`, `Commo
 (33650, 'Snails', 'Camaenidae', 'Adclarkia dulacca', NULL, 'Stanisic, 2010', 'E', 'Q'),
 (35003, 'Mammals', 'Dasyuridae', 'Antechinus argentus', 'Silver-headed antechinus', 'Baker, Mutton & Hines 2013', 'E', 'Q');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `gov_data`
---
 ALTER TABLE `gov_data`
   ADD PRIMARY KEY (`Taxon_Id`);
+
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

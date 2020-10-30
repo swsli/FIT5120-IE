@@ -53,6 +53,3 @@ INSERT INTO `content` (`Class`, `Common_name`, `Description`, `Habitat`, `Reason
 ('Mammals', 'Spectacled Flying Fox', 'Spectacled flying foxes have distinctive straw-coloured fur around their eyes which gives them their name. Eye rings can sometimes be indistinct and they will look similar to black flying foxes. Pale fur on shoulders can vary between individuals.', 'Tall rainforests and gallery forests. Smaller habitat range, living only in a few areas along the coast of northern Queensland, Australia, New Guinea, and surrounding islands.', 'Wild animals such as owls and pythons prey on these flying foxes, Foxes may become entangled in power lines or barbed wire set out by humans, Heat waves such as the side effects of bushfires can dehydrate and kill these flying foxes', 'Secure the long-term protection of the spectacled flying fox through a reduction in threats to the species survival, Increase the number of stable populations of all extant species by expansion into their former ranges');
 
 COMMIT;
-
-
-
