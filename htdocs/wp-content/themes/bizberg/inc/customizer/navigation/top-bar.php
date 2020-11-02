@@ -546,32 +546,41 @@ Kirki::add_field( 'bizberg', array(
 			'choices'     => array(
 				'alpha' => true,
 			),
-		),			
+		),	
+		'target' => array(
+			'type'        => 'checkbox',
+			'label'       => esc_html__( 'Open in a new tab ?', 'bizberg' ),
+			'default'     => true		
+		),		
 	),
 	'default'      => [
 		[
 			'icon' => 'fab fa-facebook-f',
 			'link'  => '#',
 			'label'  => esc_html__( 'Facebook', 'bizberg' ),
-			'backgroundColor' => '#3b5998'
+			'backgroundColor' => '#3b5998',
+			'target' => true
 		],
 		[
 			'icon' => 'fab fa-twitter',
 			'link'  => '#',
 			'label'  => esc_html__( 'Twitter', 'bizberg' ),
-			'backgroundColor' => '#00acee'
+			'backgroundColor' => '#00acee',
+			'target' => true
 		],
 		[
 			'icon' => 'fab fa-instagram',
 			'link'  => '#',
 			'label'  => esc_html__( 'Instagram', 'bizberg' ),
-			'backgroundColor' => '#ea3a7e'
+			'backgroundColor' => '#ea3a7e',
+			'target' => true
 		],
 		[
 			'icon' => 'fab fa-youtube',
 			'link'  => '#',
 			'label'  => esc_html__( 'Youtube', 'bizberg' ),
-			'backgroundColor' => '#cd201f'
+			'backgroundColor' => '#cd201f',
+			'target' => true
 		],
 	],
 	'partial_refresh' => array(

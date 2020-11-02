@@ -78,6 +78,10 @@ add_filter( 'bizberg_read_more_background_color', function(){
     return '#6ab43e';
 });
 
+add_filter( 'bizberg_read_more_background_color_2', function(){
+    return '#6ab43e';
+});
+
 add_filter( 'bizberg_link_color', function(){
     return '#6ab43e';
 });
@@ -105,6 +109,3 @@ add_filter( 'bizberg_footer_social_icon_background', function(){
 add_filter( 'bizberg_footer_social_icon_color', function(){
     return '#fff';
 });
-
-add_filter( ‘widget_text’, ‘shortcode_unautop’);
-add_filter( ‘widget_text’, ‘do_shortcode’);

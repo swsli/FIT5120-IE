@@ -331,6 +331,30 @@ Kirki::add_field( 'bizberg', array(
 
 Kirki::add_field( 'bizberg', array(
 	'type'        => 'color',
+	'settings'    => 'transparent_header_sticky_menu_color_hover',
+	'label'       => esc_html__( 'Menu Background Color ( Hover )', 'bizberg' ),
+	'section'     => 'transparent_header',
+	'default'     => apply_filters( 'bizberg_transparent_header_sticky_menu_color_hover', 'rgba(10,10,10,0.1)' ),
+	'choices'     => [
+		'alpha' => true,
+	],
+	'transport' => 'auto',
+	'output'    => array(
+		array(
+			'element'  => 'body.bizberg_transparent_header .sticky .navbar-nav li ul',
+			'property' => 'border-top-color',
+			'suffix'   => ' !important',
+		),
+		array(
+			'element'  => 'body.bizberg_transparent_header header .navbar-default.sticky .navbar-nav > li > a:hover, body.bizberg_transparent_header .sticky .navbar-nav > li:not(.search_wrapper):not(.header_btn_wrapper):hover',
+			'property' => 'background',
+			'suffix'   => ' !important',
+		),
+	)
+) );
+
+Kirki::add_field( 'bizberg', array(
+	'type'        => 'color',
 	'settings'    => 'transparent_header_menu_sticky_text_color',
 	'label'       => esc_html__( 'Text Color', 'bizberg' ),
 	'section'     => 'transparent_header',

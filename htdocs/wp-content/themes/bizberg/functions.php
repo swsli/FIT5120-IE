@@ -320,6 +320,10 @@ function bizberg_inline_style(){
 	$header_navbar_background_1 = bizberg_get_theme_mod( 'header_navbar_background_1' );
 	$header_navbar_background_2 = bizberg_get_theme_mod( 'header_navbar_background_2' );
 
+	// Read More Button Colors
+	$read_more_background_color = bizberg_get_theme_mod( 'read_more_background_color' );
+	$read_more_background_color_2 = bizberg_get_theme_mod( 'read_more_background_color_2' );
+
 	$inline_css = '';
 	if( $detail_page_img_position == 'center' ){
 		$inline_css .= "
@@ -363,6 +367,8 @@ function bizberg_inline_style(){
 	$inline_css .= bizberg_theme_get_gradient_color( $top_bar_background_1, $top_bar_background_2 , 'body:not(.page-template-page-fullwidth-transparent-header) header#masthead #top-bar' );
 
 	$inline_css .= bizberg_theme_get_gradient_color( $header_navbar_background_1, $header_navbar_background_2 , '.navbar-default,.navbar.sticky' );
+
+	$inline_css .= bizberg_theme_get_gradient_color( $read_more_background_color, $read_more_background_color_2, 'a.slider_btn' );
 
 	return apply_filters( 'bizberg_inline_style', $inline_css );
 
@@ -723,7 +729,7 @@ function bizberg_get_slider_1(){
 
 			                                	<a 
 												href="<?php echo esc_url( $custom_link ? $custom_link : get_permalink() ); ?>" 
-												class="slider_btn btn btn-primary btn-lg">
+												class="slider_btn">
 													<span class="slider_btn_text_wrapper">
 														<?php 
 														echo bizberg_get_slider_read_more_btn();
@@ -2116,7 +2122,8 @@ function bizberg_get_header_social_links(){
 				 	<li>
 						<a 
 						href="<?php echo esc_url( $value['link'] ); ?>"
-						class="<?php echo 'social_links_header_' . $key; ?>">
+						class="<?php echo 'social_links_header_' . $key; ?>"
+						target="<?php echo ( !empty( $value['target'] ) ? '_blank' : '_self' ); ?>">
 							<span class="ts-icon">
 								<i class="<?php echo esc_attr( $value['icon'] ); ?>"></i>
 							</span>

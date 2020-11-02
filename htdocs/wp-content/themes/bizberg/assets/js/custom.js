@@ -542,7 +542,7 @@ jQuery(document).on(
 
 jQuery(document).on(
     'mouseenter',
-    'header .navbar-default .navbar-nav > li > ul > li > a,header .navbar-default .navbar-nav > li > ul > li > ul > li > a,header .navbar-default .navbar-nav > li > ul > li > ul > li > ul > li > a', 
+    'header .navbar-default:not(.sticky) .navbar-nav > li > ul > li > a,header .navbar-default:not(.sticky) .navbar-nav > li > ul > li > ul > li > a,header .navbar-default:not(.sticky) .navbar-nav > li > ul > li > ul > li > ul > li > a', 
     function(){
 
     var selector = jQuery(this).parents('ul.sub-menu').last().closest('li').find('a:first');
@@ -562,7 +562,7 @@ jQuery(document).on(
 
 }).on(
 'mouseleave',
-'header .navbar-default .navbar-nav > li > ul > li > a,header .navbar-default .navbar-nav > li > ul > li > ul > li > a,header .navbar-default .navbar-nav > li > ul > li > ul > li > ul > li > a', 
+'header .navbar-default:not(.sticky)  .navbar-nav > li > ul > li > a,header .navbar-default:not(.sticky)  .navbar-nav > li > ul > li > ul > li > a,header .navbar-default:not(.sticky) .navbar-nav > li > ul > li > ul > li > ul > li > a', 
 function(){
 
     var selector = jQuery(this).parents('ul.sub-menu').last().closest('li').find('a:first');

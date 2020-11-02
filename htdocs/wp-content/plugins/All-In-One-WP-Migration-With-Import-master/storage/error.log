@@ -13348,3 +13348,21 @@ Oct 29 2020 06:32:42
 Oct 29 2020 06:32:57
 {"type":2,"message":"Use of undefined constant \u2018do_shortcode\u2019 - assumed '\u2018do_shortcode\u2019' (this will throw an Error in a future version of PHP)","file":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/themes\/green-eco-planet\/functions.php","line":110}
 
+Nov 02 2020 08:49:18
+{"Number":2,"Message":"touch(): Utime failed: Operation not permitted","File":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/plugins\/All-In-One-WP-Migration-With-Import-master\/lib\/vendor\/servmask\/archiver\/class-ai1wm-extractor.php","Line":470}
+
+Nov 02 2020 08:49:18
+{"Number":2,"Message":"chmod(): Operation not permitted","File":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/plugins\/All-In-One-WP-Migration-With-Import-master\/lib\/vendor\/servmask\/archiver\/class-ai1wm-extractor.php","Line":473}
+
+Nov 02 2020 08:49:19
+{"Number":2,"Message":"touch(): Utime failed: Operation not permitted","File":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/plugins\/All-In-One-WP-Migration-With-Import-master\/lib\/vendor\/servmask\/archiver\/class-ai1wm-extractor.php","Line":470}
+
+Nov 02 2020 08:49:19
+{"Number":2,"Message":"chmod(): Operation not permitted","File":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/plugins\/All-In-One-WP-Migration-With-Import-master\/lib\/vendor\/servmask\/archiver\/class-ai1wm-extractor.php","Line":473}
+
+Nov 02 2020 08:49:22
+{"Number":2,"Message":"touch(): Utime failed: Operation not permitted","File":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/plugins\/All-In-One-WP-Migration-With-Import-master\/lib\/vendor\/servmask\/archiver\/class-ai1wm-extractor.php","Line":470}
+
+Nov 02 2020 08:49:22
+{"Number":2,"Message":"chmod(): Operation not permitted","File":"\/opt\/bitnami\/apps\/wordpress\/htdocs\/wp-content\/plugins\/All-In-One-WP-Migration-With-Import-master\/lib\/vendor\/servmask\/archiver\/class-ai1wm-extractor.php","Line":473}
+

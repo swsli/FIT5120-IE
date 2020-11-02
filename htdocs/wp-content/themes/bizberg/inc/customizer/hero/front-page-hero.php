@@ -463,6 +463,65 @@ Kirki::add_field( 'bizberg', [
 ] );
 
 Kirki::add_field( 'bizberg', [
+	'type'        => 'typography',
+	'settings'    => 'slider_title_font_desktop_tablet',
+	'label'       => esc_html__( 'Title Font ( Desktop / Tablet )', 'bizberg' ),
+	'section'     => 'front_page_hero',
+	'default'     => [
+		'font-family'    => 'Playfair Display',
+		'variant'        => 'regular',
+		'font-size'      => '44px',
+		'line-height'    => '1.2',
+		'letter-spacing' => '0',
+		'color'          => '#fff',
+		'text-transform' => 'none',
+	],
+	'transport'   => 'auto',
+	'output'      => [
+		[
+			'element' => '.banner .slider .swiper-content h1'
+		],
+	],
+	'active_callback'    => array(
+		array(
+			'setting'  => 'slider_banner',
+			'operator' => '==',
+			'value'    => 'slider',
+		),
+	),
+] );
+
+Kirki::add_field( 'bizberg', [
+	'type'        => 'typography',
+	'settings'    => 'slider_title_font_mobile',
+	'label'       => esc_html__( 'Title Font ( Mobile )', 'bizberg' ),
+	'section'     => 'front_page_hero',
+	'default'     => [
+		'variant'        => '700',
+		'font-size'      => '30px',
+		'line-height'    => '1.2',
+		'letter-spacing' => '0',
+		'color'          => '#fff',
+		'text-transform' => 'none',
+	],
+	'transport'   => 'auto',
+	'output'      => [
+		[
+			'element' => '.banner .slider .swiper-content h1',
+			'media_query' => '@media (min-width: 0px) and (max-width: 480px)',
+			'suffix' => ' !important'
+		],
+	],
+	'active_callback'    => array(
+		array(
+			'setting'  => 'slider_banner',
+			'operator' => '==',
+			'value'    => 'slider',
+		),
+	),
+] );
+
+Kirki::add_field( 'bizberg', [
 	'type'        => 'select',
 	'settings'    => 'slider_title_layout',
 	'label'       => esc_html__( 'Layout', 'bizberg' ),
@@ -712,19 +771,25 @@ Kirki::add_field( 'bizberg', [
 ] );
 
 Kirki::add_field( 'bizberg', [
-	'type'        => 'color',
-	'settings'    => 'read_more_background_color',
-	'label'       => __( 'Button Background Color', 'bizberg' ),
+	'type'        => 'typography',
+	'settings'    => 'slider_read_more_font',
+	'label'       => esc_html__( 'Font', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => apply_filters( 'bizberg_read_more_background_color', '#0088cc' ),
-	'transport' => 'auto',
-	'output' => array(
-		array(
-			'element'  => 'a.slider_btn',
-			'property' => 'background',
-			'value_pattern' => '$ !important'
-		)
-	),
+	'default'     => apply_filters( 'bizberg_slider_read_more_font', [
+		'font-family'    => 'Lato',
+		'variant'        => 'regular',
+		'font-size'      => '14px',
+		'line-height'    => '1.2',
+		'letter-spacing' => '1',
+		'color'          => '#fff',
+		'text-transform' => 'uppercase'
+	]),
+	'transport'   => 'auto',
+	'output'      => [
+		[
+			'element' => 'a.slider_btn'
+		],
+	],
 	'active_callback'    => array(
 		array(
 			'setting'  => 'slider_banner',
@@ -741,18 +806,10 @@ Kirki::add_field( 'bizberg', [
 
 Kirki::add_field( 'bizberg', [
 	'type'        => 'color',
-	'settings'    => 'read_more_text_color',
-	'label'       => __( 'Button Text Color', 'bizberg' ),
+	'settings'    => 'read_more_background_color',
+	'label'       => __( 'Background Color 1', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => apply_filters( 'bizberg_read_more_text_color', '#fff' ),
-	'transport' => 'auto',
-	'output' => array(
-		array(
-			'element'  => 'a.slider_btn',
-			'property' => 'color',
-			'value_pattern' => '$ !important'
-		)
-	),
+	'default'     => apply_filters( 'bizberg_read_more_background_color', '#0088cc' ),
 	'active_callback'    => array(
 		array(
 			'setting'  => 'slider_banner',
@@ -765,6 +822,26 @@ Kirki::add_field( 'bizberg', [
 			'value'    => false,
 		)
 	),
+] );
+
+Kirki::add_field( 'bizberg', [
+	'type'        => 'color',
+	'settings'    => 'read_more_background_color_2',
+	'label'       => __( 'Background Color 2', 'bizberg' ),
+	'section'     => 'front_page_hero',
+	'default'     => apply_filters( 'bizberg_read_more_background_color_2', '#0088cc' ),
+	'active_callback'    => array(
+		array(
+			'setting'  => 'slider_banner',
+			'operator' => '==',
+			'value'    => 'slider',
+		),
+		array(
+			'setting'  => 'slider_read_more_status',
+			'operator' => '==',
+			'value'    => false,
+		)
+	)
 ] );
 
 Kirki::add_field( 'bizberg', [
@@ -814,12 +891,12 @@ Kirki::add_field( 'bizberg', [
 	'settings'    => 'slider_btn_padding',
 	'label'       => esc_html__( 'Padding', 'bizberg' ),
 	'section'     => 'front_page_hero',
-	'default'     => [
+	'default'     => apply_filters( 'bizberg_slider_btn_padding', [
 		'top'  => '12px',
 		'bottom'  => '12px',
 		'left' => '20px',
 		'right' => '20px',
-	],
+	]),
 	'choices'     => [
 		'labels' => [
 			'top'  => esc_html__( 'Top', 'bizberg' ),
@@ -919,72 +996,6 @@ Kirki::add_field( 'bizberg', array(
 		),
 	)
 ) );
-
-Kirki::add_field( 'bizberg', [
-	'type'        => 'custom',
-	'settings'    => 'font_section_title',
-	'section'     => 'front_page_hero',
-	'default'     => '<div class="bizberg_customizer_custom_heading">' . esc_html__( 'Font Options', 'bizberg' ) . '</div>'
-] );
-
-Kirki::add_field( 'bizberg', [
-	'type'        => 'typography',
-	'settings'    => 'slider_title_font_desktop_tablet',
-	'label'       => esc_html__( 'Title Font ( Desktop / Tablet )', 'bizberg' ),
-	'section'     => 'front_page_hero',
-	'default'     => [
-		'font-family'    => 'Playfair Display',
-		'variant'        => 'regular',
-		'font-size'      => '44px',
-		'line-height'    => '1.2',
-		'letter-spacing' => '0',
-		'color'          => '#fff',
-		'text-transform' => 'none',
-	],
-	'transport'   => 'auto',
-	'output'      => [
-		[
-			'element' => '.banner .slider .swiper-content h1'
-		],
-	],
-	'active_callback'    => array(
-		array(
-			'setting'  => 'slider_banner',
-			'operator' => '==',
-			'value'    => 'slider',
-		),
-	),
-] );
-
-Kirki::add_field( 'bizberg', [
-	'type'        => 'typography',
-	'settings'    => 'slider_title_font_mobile',
-	'label'       => esc_html__( 'Title Font ( Mobile )', 'bizberg' ),
-	'section'     => 'front_page_hero',
-	'default'     => [
-		'variant'        => '700',
-		'font-size'      => '30px',
-		'line-height'    => '1.2',
-		'letter-spacing' => '0',
-		'color'          => '#fff',
-		'text-transform' => 'none',
-	],
-	'transport'   => 'auto',
-	'output'      => [
-		[
-			'element' => '.banner .slider .swiper-content h1',
-			'media_query' => '@media (min-width: 0px) and (max-width: 480px)',
-			'suffix' => ' !important'
-		],
-	],
-	'active_callback'    => array(
-		array(
-			'setting'  => 'slider_banner',
-			'operator' => '==',
-			'value'    => 'slider',
-		),
-	),
-] );
 
 Kirki::add_field( 'bizberg', [
 	'type'        => 'custom',

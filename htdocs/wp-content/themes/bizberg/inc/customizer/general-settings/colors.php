@@ -117,7 +117,7 @@ Kirki::add_field( 'bizberg', array(
 	'transport' => 'auto',
 	'output'    => array(
 		array(
-			'element'  => 'a:hover,#blog .blog-post.blog-large .entry-title a:hover,#blog .blog-post .entry-meta > span > a:hover,#blog .blog-post .entry-meta > span.bizberg_read_time:hover,#blog .blog-post.blog-large .entry-date a:hover,ul.comment-item li .comment-header > a:hover,.comment-item .comment-time a:hover,.bizberg_detail_user_wrapper a:hover,.bizberg_detail_comment_count:hover,.comment-navigation .nav-previous a:hover,.comment-navigation .nav-next a:hover, .post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, #blog #sidebar.sidebar-wrapper .widget li:hover ,.bizberg_post_date a:hover',
+			'element'  => 'a:hover:not(.slider_btn),a:focus:not(.slider_btn),#blog .blog-post.blog-large .entry-title a:hover,#blog .blog-post .entry-meta > span > a:hover,#blog .blog-post .entry-meta > span.bizberg_read_time:hover,#blog .blog-post.blog-large .entry-date a:hover,ul.comment-item li .comment-header > a:hover,.comment-item .comment-time a:hover,.bizberg_detail_user_wrapper a:hover,.bizberg_detail_comment_count:hover,.comment-navigation .nav-previous a:hover,.comment-navigation .nav-next a:hover, .post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, #blog #sidebar.sidebar-wrapper .widget li:hover ,.bizberg_post_date a:hover',
 			'property'      => 'color',
 			'value_pattern' => '$'
 		),
@@ -131,6 +131,11 @@ Kirki::add_field( 'bizberg', array(
 			'property'      => 'background',
 			'value_pattern' => '$'
 		),
+		array(
+			'element'  => '.elementor-page a:hover,.elementor-page a:focus',
+			'property'      => 'color',
+			'value_pattern' => 'inherit'
+		)
 	)
 ) );
 
